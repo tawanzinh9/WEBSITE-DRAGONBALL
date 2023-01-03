@@ -1,13 +1,14 @@
-const email = document.querySelector("#login")
-const password = document.querySelector("#password")
+const nick = document.querySelector("#nickname")
 const msg = document.querySelector(".msg")
 const button = document.querySelector("#btn")
+
 button.addEventListener("click", () => {
-    let e = email.value 
-    let p = password.value
+    
+    let n = nick.value
+    let nome = n 
 
 
-    if(e < 3 || p < 3) {
+    if(n == "") {
 
        Swal.fire (
         {
@@ -15,20 +16,30 @@ button.addEventListener("click", () => {
             icon: "warning", 
             background: "black",
             color: "white",
-            iconColor: "red"
+            iconColor: "red",
+            showConfirmButton: false
         }
        )
 
     } else {
+        
         Swal.fire(
             {
-                text: "Sucess, await..." ,
+                text: `Sucess ${nome}, await...` ,
                 background: "black", 
                 icon: "success",
-                color: "#1eff00",
+                color: "rgb(255, 0, 234)",
                 iconColor: "green",
+                showConfirmButton: false,
+                
                 
             }
         )
+
+        setTimeout(() => {
+            location.href = "./main/index.html"
+        }, 2500)
+        
     }
+    
 })

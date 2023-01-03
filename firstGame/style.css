@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Graduate', cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background-size: cover;
+}
+
+.game {
+    position: relative;
+    height: 450px;
+    width: 1000px;
+    border-bottom: 20px solid rgb(0, 0, 0);
+    overflow: hidden;
+    background: url(./imgCenary/wpp.jpg);
+    background-size: cover;
+
+}
+
+.mouse-p {
+    position: absolute;
+    color: greenyellow;
+    right: 400px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.jump {
+    animation: jump 500ms ease-out;;
+}
+
+.character {
+    position: absolute;
+    bottom: 0;
+    width:  60px;
+  
+    
+    
+}
+
+.pipe {
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+    width: 60px;
+    animation: pipe-animation 2s infinite linear;
+}
+
+.count {
+    color: rgb(255, 238, 0);
+    font-size: 25px;
+    position: absolute;
+    right: 490px;
+    margin-top: 70px;
+
+}
+@keyframes jump {
+    0% {
+        bottom: 0;
+    } 40% {
+        bottom: 130px;
+    } 50% {
+        bottom: 130px;
+    } 60% {
+        bottom: 130px;
+    } 100% {
+        bottom: 0;
+    }
+}
+
+audio {
+    display: none;
+}
+@keyframes pipe-animation {
+    from {
+        right: 0;
+    } to {
+        right: 100%;
+    }
+}
