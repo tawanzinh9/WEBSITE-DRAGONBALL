@@ -5,7 +5,9 @@ const button = document.querySelector("#btn")
 button.addEventListener("click", () => {
     
     let n = nick.value
-    let nome = n 
+    let nome = n
+    
+    
 
 
     if(n == "") {
@@ -22,10 +24,11 @@ button.addEventListener("click", () => {
        )
 
     } else {
-        
+       
         Swal.fire(
             {
-                text: `Sucess ${nome}, await...` ,
+                 
+                html: `Sucess <span style="color:  rgb(0, 255, 0);">${nome}</span>, await...`,
                 background: "black", 
                 icon: "success",
                 color: "rgb(255, 0, 234)",
