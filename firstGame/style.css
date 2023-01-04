@@ -12,6 +12,8 @@ body {
     align-items: center;
     background: black;
     background-size: cover;
+
+    animation: bodyA 2s;
 }
 
 .game {
@@ -85,5 +87,13 @@ audio {
         right: 0;
     } to {
         right: 100%;
+    }
+}
+
+@keyframes bodyA {
+    from {
+        transform: rotateX(90deg);
+    } to {
+        transform: rotateX(0deg);
     }
 }

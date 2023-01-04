@@ -103,3 +103,15 @@ button:hover {
 audio {
     display: none;
 }
+
+body {
+    animation: bodyA 0.2s;
+}
+
+@keyframes bodyA {
+    from {
+        transform: rotateX(90deg);
+    } to {
+        transform: rotateX(0deg);
+    }
+}

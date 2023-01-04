@@ -21,6 +21,7 @@ body {
 
 body {
     filter: saturate(600%);
+    animation: bodyA 0.4s;
 }
 .all {
     display: flex;
@@ -45,6 +46,14 @@ body {
     
 }
 
+
+@keyframes bodyA {
+    from {
+        transform: rotateX(90deg);
+    } to {
+        transform: rotateX(0deg);
+    }
+}
 audio {
     display: none;
 }
