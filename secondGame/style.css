@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Graduate', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/win21.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    max-width: 500px;
+    border: 2px solid rgb(66, 34, 34);
+    border-radius: 10px;
+    padding: 25px 10px;
+    background: linear-gradient(72deg, rgba(255, 255, 254, 0.256) 1%, rgba(255, 255, 255, 0.239) 99%);
+    box-shadow: 1px 5px 10px ;
+    transition: .6s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main #btn_start{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    
+}
+.main #btn_start:hover{
+    cursor: pointer;
+}
+
+.main .procura{
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.main .area_game{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 25px;
+}
+
+.main .area_game .area{
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    text-align: center;
+    padding: 25%;
+    
+    color: black;
+    font-size: xx-large;
+}
+
+.main .area_game .area:hover{
+    cursor: pointer;
+}
+
+
+.main .tempo{
+    margin: 25px 10px;
+    border: 1px solid;
+    padding: 10px;
+    width: 100%;
+    text-align: start;
+    font-size: medium;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bar{
+    padding: 3px 10px;
+    margin: 2px;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.bar:hover{
+    background-color: #FFF;
+}

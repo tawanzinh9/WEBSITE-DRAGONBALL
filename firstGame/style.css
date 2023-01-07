@@ -12,7 +12,7 @@ body {
     align-items: center;
     background: black;
     background-size: cover;
-
+    flex-direction: column  ;
     animation: bodyA 2s;
 }
 
@@ -96,4 +96,10 @@ audio {
     } to {
         transform: rotateX(0deg);
     }
+}
+
+
+p {
+    display: flex;
+    color: white;
 }
