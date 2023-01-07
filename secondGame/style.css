@@ -103,3 +103,16 @@ body{
 .bar:hover{
     background-color: #FFF;
 }
+
+
+body {
+    animation: bodyA 0.2s;
+}
+
+@keyframes bodyA {
+    from {
+        transform: rotateX(90deg);
+    } to {
+        transform: rotateX(0deg);
+    }
+}
