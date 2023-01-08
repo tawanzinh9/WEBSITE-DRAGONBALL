@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
     let n = nick.value
     let nome = n
     
-    
+    localStorage.setItem("nickName", nome)
 
 
     if(n == "") {
